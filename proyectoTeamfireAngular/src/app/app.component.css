@@ -1,0 +1,295 @@
+
+
+--------------------------------
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  padding: 90px 20px 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  top: 20px;
+  position: relative; 
+}
+
+#header .header-container {
+  background-color:#2f74ff;/*COLOR DE FONDO*/
+  height: 80px;
+  padding: 5px 15px;
+  border: 2px solid rgba(0, 60, 255, 0.838); /*MODIFICACIÓN BORDER*/
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+#header.header-scrolled {
+  background: rgb(0, 0, 0);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  top: 0;
+  background-color: #2f74ffef;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 100 px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+  background-color: #2f74ffef;
+  align-items: center;
+  
+}
+
+.navbar ul {  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+
+  
+}
+
+.navbar li {
+  position: relative;
+  align-items: center;
+  
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px 10px 15px;
+  color: #181818;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+  text-decoration: none;
+ 
+  
+}
+.navbar a:hover{
+  color: #ffffff;
+  background-color: #263450;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+
+/* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 80vh;
+  background-image: url(/assets/imagenes/fondoindex.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;  
+}
+#hero .container {
+  padding-top: 80px;
+  text-align: center;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+#hero h2 {
+  color: #eee;
+  margin-bottom: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 10px;
+
+}
+#hero .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+
+}
+#hero .btn-get-started:hover {
+  background: #2f74ffef;
+  border: 2px solid #263450;
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
+  #hero .container {
+    padding-top: 60px;
+  }
+  #hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .main-container{     /*MODIFICACION REGISTRO*/
+    margin: 4%;
+    min-width: 92%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #2f74ffef;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #2f74ffef;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+  
+
+
+
+
+/*MAIN*/
+/*Modificación agrego padding to para separar la barra de busqueda en Recluting*/
+main {
+  padding-top: 15px;
+}
+.main-container {
+  background-color:#EFEFEF; /*COLOR DE FONDO*/
+  color: rgb(61, 58, 59); /*COLOR TEXTO*/
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/*Modificacion de los div main-conteirner a div main-container2*/
+.main-container2{
+  background-color:#EFEFEF; /*COLOR DE FONDO*/
+  color: rgb(61, 58, 59); /*COLOR TEXTO*/
+}
+
+/*SECTION*/
+.section-container {
+  background-color: #E6E6E6; /*COLOR DE FONDO*/
+  padding: 10px;
+  text-align: center;
+}
+.section-img {
+  width: 100px;
+}
+
+/*RECRUITING CARDS*/
+.recruiting-card {
+  background-color: blueviolet; /*COLOR DE FONDO*/
+  color: antiquewhite; /*COLOR TEXTO*/
+}
+
+/*FOOTER*/
+footer {
+  background-color:#5C7AEA ; /*COLOR DE FONDO*/
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
