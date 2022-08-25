@@ -1,0 +1,29 @@
+.main-container{
+    background-color:#9bbaf751;
+    padding: 10px;
+    text-align: center;
+    box-shadow:     
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+
+.main-container .container2:before{
+    content:"";
+    margin:0;
+    box-shadow: inset 0 0 2000px rgba(255,255,255, 0.5);
+    filter: blur(1px);
+}
+
+.main-container .container2 form{
+    padding: 10px 50px 10px 50px;
+
+}
+
+#checkbox-terminos{
+    padding: 10px;
+    transform: scale(1.3);
+    
+}
+
