@@ -1,5 +1,20 @@
+ #navbarUsuario {
+border: 2px solid #ff0000;
+height:55px;
+ }
 
+ #navbarUsuario div ul li a{
+    color: black;
+    margin: 10px;
+    padding: 5px;
+}
 
+#navbarUsuario div ul li a:hover{
+    background-color: #15578327 ;
+    transition: 0.7s;
+    border-radius: 3px;
+
+}
 /*imagen portada*/
 .hero {
     background: url("../../../assets/tiendaImg/imagenheader.jpg") center center;
