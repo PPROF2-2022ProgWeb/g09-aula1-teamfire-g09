@@ -1,38 +1,32 @@
 <div class="container section-container">
   <div class="containerlogin">
-  <h1 class="m-4 text-center">Ingresar</h1>
-  <form method="POST" action="login.php" class="needs-validation">
-    <div class="mb-3 row">
-      <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Usuario</label>
-      <div class="col-sm-10">
-     <input  type="email" name="txtusuario" class="form-control" id="usuario1" placeholder="Nombre de usuario o correo electrónico" required>
-        </div>-->
-         <!--se comenta momentaneamente (va dentro de input) [(ngModel)]="user.username" -->
+    <h1 class="m-4 text-center">Ingresar</h1>
+     <form method="POST" action="login.php" class="needs-validation formulariologin">
+      <div class="mb-3 row">
+        <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Usuario</label>
+        <br>
+        <input  type="email" name="txtusuario" class="form-control" id="usuario1" placeholder="Nombre de usuario o correo electrónico" required>
       </div>
       <div class="mb-3 row">
         <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
-      	   <div class="col-sm-10">
-          <input type="password" name="txtpassword" class="form-control" id="inputPassword" placeholder="Contraseña" required>
-        </div>
+        <br>
+        <input type="password" name="txtpassword" class="form-control" id="inputPassword" placeholder="Contraseña" required>
+      </div>
       <!--se comenta momentaneamente (va dentro de input)  [(ngModel)]="user.contrasena" -->
-
-      
-        <div class="checkbox mb-3 text-center">
-          <label>
-            <input type="checkbox" value="remember-me">Recordarme</label>
+      <div class="checkbox mb-3 text-center">
+        <p>Recordarme
+        <label class="ckeckbox" id="checkbox-terminos"><input type="checkbox" id="cbox1" value="checkbox"></label>
+      </p>
+      </div>
+      <div class="g-recaptcha "data-sitekey="6LcNsJgcAAAAABboEiiMZ-IW7cNCbwSDvQwrGrql"></div>
+      <div class="container text-center">
+        <div class="checkbox mb-3">
+          <button value="Ingresar" class="btn btn-primary" (click)="logIn()">Ingresar</button>
         </div>
-        <div class="g-recaptcha "data-sitekey="6LcNsJgcAAAAABboEiiMZ-IW7cNCbwSDvQwrGrql"></div>
-        <div class="container text-center">
-          <div class="checkbox mb-3">
-            <button value="Ingresar" class="btn btn-primary" (click)="logIn()">Ingresar</button>
-          </div>
-
-          <div class="text-center my-2">
-            <p>Si no estás registrado, entrá <a href="registro">aquí</a></p>
-          </div>
+        <div class="text-center my-2">
+          <p>Si no estás registrado, entrá <a href="registro">aquí</a></p>
         </div>
-			</div>
+      </div>
 		</form>	
   </div>
-	</div>	
-
+</div>

@@ -5,33 +5,68 @@
     transition: all 0.8s;
 }
 
-
-.login{
-    margin-left: 200px;
-    display: block;
-
-}
-.container{
-
-
-}
 .section-container {
+    background-color:#9bbaf751;
+    margin: 50px 200px;
     padding: 10px;
-    width: 50em;
-    margin-left: 20%;
     text-align: center;
-    box-shadow:      
+    box-shadow:     
     inset 0 -3em 3em rgba(0,0,0,0.1),
     0 0  0 2px rgb(255,255,255),
     0.3em 0.3em 1em rgba(0,0,0,0.3);
-    background-color:#9bbaf751;
-    margin-right: 50px;
     
 }
-
 .section-container:before{
     content:"";
     margin:0;
     box-shadow: inset 0 0 2000px rgba(255,255,255, 0.5);
     filter: blur(1px);
+}
+
+.section-container .containerlogin{
+    padding: 30px;
+    font-size: 20px;
+}
+
+.section-container .containerlogin h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.section-container .containerlogin .formulariologin div{
+        padding: 5px;
+}
+
+.section-container .containerlogin .formulariologin  p{
+    padding-top: 20px;
+
+}
+
+.section-container .containerlogin .formulariologin button{
+    padding: 10px 20px;
+    background-color: #1061da;
+    color: #f0f8ff;
+    font-size: 15px;
+    margin-top: 10px;
+    border: 2px solid rgb(71, 66, 66);
+    border-radius: 15px ;
+}
+
+.section-container .containerlogin .formulariologin button:hover{
+    background-color: #1061da84;
+
+}
+.section-container .containerlogin .formulariologin div label{
+    padding: 5px;
+
+}
+.section-container .containerlogin .formulariologin div input{
+    padding: 10px;
+    font-size: 15px;
+    width: 70%;
+}
+
+#cbox1{
+    width: 20px;
+    transform: scale(1.3);
 }

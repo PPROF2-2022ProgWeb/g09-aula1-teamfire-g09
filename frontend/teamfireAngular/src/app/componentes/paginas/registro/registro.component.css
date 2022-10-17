@@ -38,13 +38,16 @@
 }
 .main-container .container2 .formularioreg button{
     padding: 10px;
-    background-color: #1061da40;
+    background-color: #1061da;
+    color: #f0f8ff;
     font-size: 15px;
     margin-top: 20px;
+    border: 2px solid rgb(71, 66, 66);
+    border-radius: 15px ;
 }
 
 .main-container .container2 .formularioreg button:hover{
-    background-color: #1061da57;
+    background-color: #1061da84;
 
 }
 .main-container .container2 .formularioreg div label{
@@ -52,12 +55,13 @@
 
 }
 .main-container .container2 .formularioreg div input{
-    padding: 5px;
-    width: 300px;
+    padding: 10px;
+    font-size: 15px;
+    width: 70%;
 
 }
 #checkbox-terminos{
-    padding: 10px;
+    margin-left: 10px;
     transform: scale(1.3);
     
 }
