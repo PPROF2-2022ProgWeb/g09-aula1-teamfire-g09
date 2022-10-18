@@ -8,6 +8,9 @@ import { PrincipalComponent } from './componentes/paginas/principal/principal.co
 import { LoginComponent } from './componentes/paginas/login/login.component';
 import { RegistroComponent } from './componentes/paginas/registro/registro.component';
 import { TiendaprincipalComponent } from './componentes/paginas/tiendaprincipal/tiendaprincipal.component';
+import { TiendaremerasComponent } from './componentes/paginas/tiendaremeras/tiendaremeras.component';
+import { TiendatazasComponent } from './componentes/paginas/tiendatazas/tiendatazas.component';
+import { TiendallaverosComponent } from './componentes/paginas/tiendallaveros/tiendallaveros.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { TiendaprincipalComponent } from './componentes/paginas/tiendaprincipal/
     PrincipalComponent,
     LoginComponent,
     RegistroComponent,
-    TiendaprincipalComponent
+    TiendaprincipalComponent,
+    TiendaremerasComponent,
+    TiendatazasComponent,
+    TiendallaverosComponent
   ],
   imports: [
     BrowserModule,
